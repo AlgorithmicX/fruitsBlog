@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width" charset="UTF-8">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=New+Amsterdam&family=Playwrite+NG+Modern:wght@100..400&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+
+</head>
+<body >
+<div class="container" id="iindex">
+    <div id="navbar">
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="healingProperties.html">Healing Properties</a></li>
+                <li><a href="mentalHealth.html">Mental Health</a></li>
+            </ul>
+
+        </nav>
+        <script>
+            function showSidebar(){
+                const sidebar = document.querySelector('.sidebar');
+                sidebar.style.display ="flex";
+            }
+            function hideSidebar(){
+                const sidebar = document.querySelector('.sidebar');
+                sidebar.style.display ="none";
+            }
+
+        </script>
+
+    </div>
+    <div class="index-page">
+    <div class="wrapper">
+        <div class="card">
+            <img src="fruitBoardd.jpg">
+            <div class="info">
+                <h1>Home</h1>
+                <p>Check our home page</p>
+                <a href="home.html" class="btn">VIEW</a>
+
+            </div>
+        </div>
+        <div class="card">
+            <img src="gingerTea.jpg">
+            <div class="info">
+                <h1>Health Benefits</h1>
+                <p>Check out the exceptional health benefits of fruits</p>
+                <a href="healingProperties.html" class="btn">READ MORE</a>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="triviaCoverIndex.jpg">
+            <div class="info">
+                <h1>Trivia</h1>
+                <p>You think you know a lot about fruits? Test yourself !</p>
+                <a href="mentalHealth.html" class="btn">TRY THE TRIVIA</a>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    </div>
+
+
+
+</div>
+
+</body>
+</html>
